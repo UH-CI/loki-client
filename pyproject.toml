@@ -1,3 +1,22 @@
 [build-system]
-requires = ["setuptools>=42"]
+requires = ["setuptools>=61.0.0"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "loki-client"
+version = "0.0.5"
+authors = [
+    { name = "hackhan", email = "hackhan@xxx.com" }
+]
+description = "A Python client interacting with Grafana Loki."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+# Explicitly tells Python that 'loki_client' IS the package folder at the root.
+packages = ["loki_client"] 
